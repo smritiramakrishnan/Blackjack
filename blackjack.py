@@ -1,7 +1,7 @@
 #|||||||||||||||||||||||||||||||||||||||||||||||
 # Black Jack
 # by Team Black Jack
-# Team: Smriti Ramakrishnan, Emelie Rahn, Lindsey Brashears, Hannah Ciprian 
+# Team: Smriti Ramakrishnan, ER, LB, HC 
 #|||||||||||||||||||||||||||||||||||||||||||||||
 
 
@@ -11,7 +11,7 @@
 import random
 import time
 # counts the  amount of points player and dealer has
-# Coder: Emelie Rahn
+# Coder: ER
 points_player = 0 # amount of points player has
 points_dealer = 0 #amount of points dealer has
 
@@ -88,7 +88,7 @@ dealer_hand = [] # Coder: Smriti Ramakrishnan
 #|||||||||||||||||||||||||||||||||||||||||||||||
 
 # Prints a hello message and the rules of blackjack    
-def intro_message(): # Coder: Smriti Ramakrishnan & hannah ciprian
+def intro_message(): # Coder: Smriti Ramakrishnan & HC
     print("hello! welcome to black jack!")
 
     print("this is a card game that tests your luck!")
@@ -123,7 +123,7 @@ def intro_message(): # Coder: Smriti Ramakrishnan & hannah ciprian
 
 
 # Function to deal the first hand to the dealer and player
-# Coder: Emelie Rahn
+# Coder: ER
 def deal_cards():
     for i in range(2):
         pnew_card = random.choice(full_deck_list)
@@ -137,7 +137,7 @@ def deal_cards():
     
 
 #Functions for if the player wants to quit, stand (play the hand), or hit (get another card)
-def user_turn(p_points): #Coder: Hannah
+def user_turn(p_points): #Coder: HC
     print("The dealer has a", dealer_hand[0])
     if hand_value(player_hand) == 21:
         p_points = p_points
@@ -254,7 +254,7 @@ def hand_value(hand):
 # add up games played and the games the player won
 # print the amount of winning games for the player and the total games
 # print a goodbye message 
-def game_stats_calc(points, rounds):  # Coder: Lyndsey Brashears
+def game_stats_calc(points, rounds):  # Coder: LB
     if urounds_or_timer == "r":
         print("You played Black Jack for a total of " + str(num_rounds) + " rounds.")
     print("You won " + str(rounds) + " rounds.")
